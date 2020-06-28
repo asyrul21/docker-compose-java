@@ -85,4 +85,10 @@ docker ps
 ```
 
 # Refereneces
-1. https://dzone.com/articles/run-simple-jar-application-in-docker-container-1
+https://dzone.com/articles/run-simple-jar-application-in-docker-container-1
+
+https://stackoverflow.com/questions/29821045/cannot-find-symbol-error-in-cmd-but-not-in-ide/29821828
+
+https://codefresh.io/docker-tutorial/create-docker-images-for-java/
+
+http://archive.oreilly.com/oreillyschool/courses/java3/java314.html

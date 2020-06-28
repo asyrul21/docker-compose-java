@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+  ai-engine:
+    # dockerfile path
+    build: ./AIEngine
+    # binding to volume
+    volumes: 
+      - type: bind
+        source: ./AIEngine
+        target: /usr/src/app/aiengine
+    # port mapping
+    ports:
+      - 5001:80
+  
+  java-app:
+    build: ./chatbot-poc
+    volumes: 
+      - type: bind
+        source: ./chatbot-poc
+        target: /usr/src/app/chatbot-poc
+    depends_on:
+      - ai-engine
